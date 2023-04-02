@@ -8,6 +8,7 @@ function Greeting(props) {
       <h2>Dobrodosli u {props.appName}</h2>
       <h3>Hvala sto ste nas posetili, {props.username}</h3>
     </div>
+    //
   );
 }
 
