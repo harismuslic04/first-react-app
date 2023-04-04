@@ -104,16 +104,46 @@
 // console.log(genFunc().next());
 // console.log(genFunc().next());
 
-function* iteratorFunc() {
-  let count = 0;
-  for (let i = 0; i < 2; i++) {
-    count++;
-    yield i;
-  }
-  return count;
-}
-let iterator = iteratorFunc();
-console.log(iterator.next()); // {value:0,done:false}
-console.log(iterator.next()); // {value:1,done:false}
-console.log(iterator.next());
-console.log(iterator.next());
+// function* iteratorFunc() {
+//   let count = 0;
+//   for (let i = 0; i < 2; i++) {
+//     count++;
+//     yield i;
+//   }
+//   return count;
+// }
+// let iterator = iteratorFunc();
+// console.log(iterator.next()); // {value:0,done:false}
+// console.log(iterator.next()); // {value:1,done:false}
+// console.log(iterator.next());
+// console.log(iterator.next());
+
+// const classDetails = {
+//   strength: 78,
+//   benches: 39,
+//   blackBoard: 1,
+// };
+// const {
+//   strength: classStrength,
+//   benches: classBenches,
+//   blackBoard: classBlackBoard,
+// } = classDetails;
+// console.log(classStrength); // Outputs 78
+// console.log(classBenches); // Outputs 39
+// console.log(classBlackBoard);
+
+// var scope = "global scope";
+// function check() {
+//   var scope = "local scope";
+//   function f() {
+//     return scope;
+//   }
+//   return f;
+// }
+
+let x = {},
+  y = { name: "Ronny" },
+  z = { name: "John" };
+x[y] = { name: "Vivek" };
+x[z] = { name: "Akki" };
+console.log(x[y]);
