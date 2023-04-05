@@ -1,1 +1,1 @@
-extractingArgs(8, 9, 1);
+isAnagram(wordOne, wordTwo);

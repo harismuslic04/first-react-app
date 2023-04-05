@@ -141,9 +141,87 @@
 //   return f;
 // }
 
-let x = {},
-  y = { name: "Ronny" },
-  z = { name: "John" };
-x[y] = { name: "Vivek" };
-x[z] = { name: "Akki" };
-console.log(x[y]);
+// let x = {},
+//   y = { name: "Ronny" },
+//   z = { name: "John" };
+// x[y] = { name: "Vivek" };
+// x[z] = { name: "Akki" };
+// console.log(x[y]);
+
+// (function (a) {
+//   return (function () {
+//     console.log(a);
+//     a = 23;
+//   })();
+// })(45);
+
+// function bigFunc(element) {
+//   let newArray = new Array(700).fill("♥");
+//   // console.log(newArray);
+//   return newArray[element];
+// }
+// console.log(bigFunc(599)); // Array is created
+// console.log(bigFunc(670));
+// console.log(bigFunc(750));
+
+// function randomFunc() {
+//   for (let i = 0; i < 2; i++) {
+//     setTimeout(() => console.log(i), 1000);
+//   }
+//   for (let j = 4; j < 7; j++) {
+//     console.log(j);
+//   }
+// }
+// randomFunc();
+
+// function makeFunc() {
+//   const name = "Mozilla";
+//   function displayName() {
+//     console.log(name);
+//   }
+//   return displayName;
+// }
+
+// const myFunc = makeFunc();
+// myFunc();
+
+// function randomFunc() {
+//   var obj1 = { name: "Vivian", age: 45 };
+//   return function () {
+//     console.log(obj1.name + " is " + "awesome"); // Has access to obj1 even when the ran
+//   };
+// }
+// var initialiseClosure = randomFunc(); // Returns a function
+// initialiseClosure();
+
+// function randomFunc() {
+//   for (var i = 0; i < 2; i++) {
+//     (function (i) {
+//       setTimeout(() => console.log(i), 1000);
+//     })(i);
+//   }
+// }
+// randomFunc();
+
+// const str = "The quick brown fox jumps over the lazy dog.";
+
+// const words = str.split(" ");
+// console.log(words);
+
+// const array1 = [1, 7, 3, , 100000];
+// array1.sort();
+// console.log(array1);
+
+// var firstWord = "Deepak";
+// var secondWord = "Aman";
+// // isAnagram(wordOne, wordTwo); // true
+// function isAnagram(one, two) {
+//   //Change both words to lowercase for case insensitivity..
+//   var a = one.toLowerCase();
+//   var b = two.toLowerCase();
+//   // Sort the strings, then combine the array to a string. Examine the outcomes.
+//   a = a.split("").sort().join("");
+//   b = b.split("").sort().join("");
+//   return a === b;
+// }
+// console.log(isAnagram(firstWord, secondWord));
