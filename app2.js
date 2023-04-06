@@ -168,8 +168,8 @@
 //   for (let i = 0; i < 2; i++) {
 //     setTimeout(() => console.log(i), 1000);
 //   }
-//   for (let j = 4; j < 7; j++) {
-//     console.log(j);
+//   for (var j = 4; j < 7; j++) {
+//     setTimeout(() => console.log(j), 1000);
 //   }
 // }
 // randomFunc();
@@ -225,3 +225,26 @@
 //   return a === b;
 // }
 // console.log(isAnagram(firstWord, secondWord));
+
+// const b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// // for (let i = 0; i < 10; i++) {
+// //   setTimeout(() => console.log(b[i]), 1000);
+// // }
+// for (var i = 0; i < 10; i++) {
+//   setTimeout(() => console.log(b[i]), 1000);
+// }
+
+// var symbol1 = Symbol("symbol");
+// console.log(symbol1);
+
+// {
+//   let x = 1;
+// }
+// function ispis() {
+//   return console.log(x);
+// }
+// ispis();
+
+// (function () {
+//   console.log(3);
+// })();
