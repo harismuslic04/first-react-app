@@ -1,11 +1,11 @@
 .main {
-  width: 50%;
-  height: 30vh;
-  background-color: rgb(97, 97, 212);
   margin: 50px auto;
-  border-radius: 30px;
+  width: 40%;
+  height: 160px;
+  background-color: aqua;
+  border-radius: 15px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
