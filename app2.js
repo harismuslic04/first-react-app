@@ -288,3 +288,37 @@
 //   return suma;
 // }
 // console.log(solution(20));
+
+//codewar
+// function arrayDiff(a, b) {
+//   let i;
+//   let j;
+//   let novi = [];
+//   if (a.length == 0) {
+//     return [];
+//   } else if (b.length == 0) {
+//     return a;
+//   } else {
+//     for (i = 0; i < a.length; i++) {
+//       if (b.includes(a[i]) == false) {
+//         novi.push(a[i]);
+//       }
+//     }
+//   }
+//   return novi;
+// }
+// console.log(arrayDiff([1, 2, 3], [1, 2]));
+
+//codewar
+// var countBits = function (n) {
+//   let brojac = 0;
+//   let binar = n.toString(2);
+//   for (let i = 0; i < binar.length; i++) {
+//     if (binar[i] == 1) {
+//       brojac++;
+//     }
+//   }
+//   return brojac;
+// };
+
+// console.log(countBits(5));
