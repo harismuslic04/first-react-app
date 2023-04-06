@@ -248,3 +248,43 @@
 // (function () {
 //   console.log(3);
 // })();
+
+// let text = "The best things in life are free";
+// let pattern = /e/;
+// let result = pattern.test(text);
+// console.log(result);
+
+// digit number codewars
+// function solveExpression(exp) {
+//   for (let i = 0; i <= 9; i++) {
+//     const ex = exp.replace(/\?/g, i).split("=");
+//     if (/--/.test(ex[0])) {
+//       ex[0] = ex[0].replace(/(-([0-9]+))/g, "($1)");
+//     }
+//     if (/\b00|00\b/g.test(ex.join("="))) continue;
+//     if (exp.includes(i)) continue;
+//     if (eval(ex[0]) == ex[1]) return i;
+//   }
+//   return -1;
+// }
+// console.log(solveExpression("123?45*?=100"));
+
+// Multiples of 3 or 5 codeward
+// function solution(number) {
+//   let suma = 0;
+//   let niz = [];
+//   if (number > 0) {
+//     for (i = 1; i < number; i++) {
+//       if (i % 3 == 0 && i % 5 == 0) {
+//         suma += i;
+//         niz.push[i];
+//       } else if (i % 3 == 0 && niz.includes(i) === false) {
+//         suma += i;
+//       } else if (i % 5 == 0 && niz.includes(i) === false) {
+//         suma += i;
+//       }
+//     }
+//   }
+//   return suma;
+// }
+// console.log(solution(20));
