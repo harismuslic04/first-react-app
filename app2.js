@@ -320,5 +320,40 @@
 //   }
 //   return brojac;
 // };
-
 // console.log(countBits(5));
+
+//Disemvowel Trolls codewars
+// function disemvowel(str) {
+//   str;
+//   let novi = "";
+//   let i;
+//   for (i = 0; i < str.length; i++) {
+//     if (
+//       str[i].toLowerCase() != "a" &&
+//       str[i].toLowerCase() != "e" &&
+//       str[i].toLowerCase() != "i" &&
+//       str[i].toLowerCase() != "o" &&
+//       str[i].toLowerCase() != "u"
+//     )
+//       novi += str[i];
+//   }
+//   return novi;
+// }
+// console.log(disemvowel("Haris je kralj"));
+
+//ako rec ima preko 5 slova obrni je u toj recenici
+// function spinWords(string) {
+//   let novi = "";
+
+//   let recenica = string.split(" ");
+//   for (let i = 0; i < recenica.length; i++) {
+//     if (recenica[i].length > 4) {
+//       novi = novi + " " + recenica[i].split("").reverse().join("");
+//     } else {
+//       novi = novi + " " + recenica[i];
+//     }
+//   }
+
+//   return novi.trim();
+// }
+// console.log(spinWords("Welcome hari sta ima liverpool najjaci"));
