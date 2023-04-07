@@ -357,3 +357,68 @@
 //   return novi.trim();
 // }
 // console.log(spinWords("Welcome hari sta ima liverpool najjaci"));
+
+//Who likes it? code wars
+// function likes(names) {
+//   if (names.length == 0) {
+//     return "no one likes this";
+//   } else if (names.length == 1) {
+//     return names[0] + " likes this";
+//   } else if (names.length == 2) {
+//     return names[0] + " and " + names[1] + " like this";
+//   } else if (names.length == 3) {
+//     return names[0] + "," + names[1] + " and " + names[2] + " like this";
+//   } else {
+//     let duzina = names.length - 2;
+//     return names[0] + "," + names[1] + " and " + duzina + " others like this";
+//   }
+// }
+// console.log(likes(["haris", "liverpool", "ucl", "prvak", "prvi"]));
+
+//NAPRAVI PIRAMIDU codewars
+// function towerBuilder(nFloors) {
+//   let space,
+//     star,
+//     tower = [];
+//   for (i = 1; i <= nFloors; i++) {
+//     space = " ".repeat(nFloors - i);
+//     star = "*".repeat(2 * i - 1);
+//     tower.push(`${space}${star}${space}`);
+//   }
+//   return tower;
+// }
+// console.log(towerBuilder(3));
+
+//string split codewars
+// function solution(str) {
+//   var arr = str.split("");
+//   var res = [];
+
+//   for (let i = 0; i < arr.length; i += 2) {
+//     if (arr[i + 1]) res.push(arr[i] + arr[i + 1]);
+//     else res.push(arr[i] + "_");
+//   }
+
+//   return res;
+// }
+
+//two sum codewars
+// function twoSum(numbers, target) {
+//   let novi = [];
+//   for (let i = 0; i < numbers.length - 1; i++)
+//     for (let j = 1; j < numbers.length; j++) {
+//       if (numbers[i] + numbers[j] == target) novi.push(i, j);
+//     }
+//   let noviniz = [novi[0], novi[1]];
+//   return noviniz;
+// }
+// console.log(twoSum([1, 2, 3, 4], 4));
+
+//isPangram codewars
+// function isPangram(string) {
+//   string = string.toLowerCase();
+//   return "abcdefghijklmnopqrstuvwxyz".split("").every(function (x) {
+//     return string.indexOf(x) !== -1;
+//   });
+// }
+// console.log(isPangram("abcdefghijklmnopqrstuvwxyz"));
