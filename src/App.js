@@ -59,55 +59,20 @@ function App() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(4, 250px)",
+            gridTemplateColumns: "repeat(3, 380px)",
             justifyContent: "center",
-            gridAutoRows: "minmax(420px, auto)",
-            gridGap: "40px",
+            gridAutoRows: "minmax(280px, auto)",
+            gridGap: "50px",
+            columnGap: "30px",
           }}
         >
-          {/* <PersonCard
-            imageURL={"https://avatars.githubusercontent.com/u/89378479?v=4"}
-            fullName={"Dzenan Kosuta"}
-            location={"Novi pazar, Serbia"}
-            description={
-              "Dženan is a mathematician, and he work's in center NIT as a Webdeveloper"
-            }
-            goToRepositories={
-              "https://github.com/dzenankosuta?tab=repositories"
-            }
-          />
-          <PersonCard
-            imageURL={"https://avatars.githubusercontent.com/u/111905831?v=4"}
-            fullName={"Alen Muslic"}
-            location={"Novi pazar, Serbia"}
-            description={"Alen is rising Web developer..."}
-            goToRepositories={"https://github.com/alenmuslic?tab=repositories"}
-          />
-          <PersonCard
-            imageURL={
-              "https://www.borisradivojkov.com/assets/images/profesionalni-poslovni-portret-rukovodioca-600x600.jpg"
-            }
-            fullName={"Aladin Zecic"}
-            location={"Novi pazar, Serbia"}
-            description={"Aladin is rising Web developer..."}
-            goToRepositories={"https://github.com/aladinzecic?tab=repositories"}
-          />
-          <PersonCard
-            imageURL={"https://avatars.githubusercontent.com/u/111905979?v=4"}
-            fullName={"Haris Muslic"}
-            location={"Novi pazar, Serbia"}
-            description={"Haris is rising Web developer..."}
-            goToRepositories={
-              "https://github.com/harismuslic04?tab=repositories"
-            }
-          /> */}
           {persons.map((person) => (
             <PersonCard
               imageURL={person.imageURL}
-              fullName={person.fullName}
-              location={person.location}
-              description={person.description}
-              goToRepositories={person.goToRepositories}
+              name={person.name}
+              stars={person.stars}
+              rating={person.rating}
+              rewievs={person.rewievs}
             />
           ))}
           <div>
