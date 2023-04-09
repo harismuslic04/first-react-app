@@ -11,3 +11,8 @@
   justify-content: flex-start;
   align-items: center;
 }
+.formContainer {
+  margin: auto;
+  /* margin-top: 150px; */
+  width: 30%;
+}

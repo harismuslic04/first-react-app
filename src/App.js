@@ -48,6 +48,8 @@ function App() {
     setCount(count - 1);
   };
   // const x = 10;
+  const [name, setName] = useState("");
+
   return (
     //  React.createElement("p", {}, "Neki paragraf");
     <>
@@ -72,7 +74,8 @@ function App() {
               name={person.name}
               stars={person.stars}
               rating={person.rating}
-              rewievs={person.rewievs}
+              reviews={person.reviews}
+              location={person.location}
             />
           ))}
           <div>
@@ -90,6 +93,44 @@ function App() {
               +
             </button>
           </div>
+        </div>
+        <div className="formContainer">
+          {" "}
+          <form
+            id="form"
+            onSubmit={(event) => {
+              event.preventDefault();
+            }}
+          >
+            <label htmlFor="firstName">Unesite vase ime</label>
+            <input
+              type="text"
+              id="firstName"
+              required
+              // innerText={"ime"}
+              value={name}
+              onChange={(event) => setName(event.target.value)}
+            ></input>
+            <br></br>
+            <br></br>
+            <label htmlFor="lastName">Unesite vase prezime</label>
+            <input type="text" id="lastName" required></input>
+            <br></br>
+            <br></br>
+            <label htmlFor="email">Unesite vasU adresu</label>
+            <input type="email" id="email" required></input>
+            <br></br>
+            <br></br>
+            <label htmlFor="hobi">Unesite vas hobi</label>
+            <input type="text" id="hobi"></input>
+            <br></br>
+            <br></br>
+            <label htmlFor="phone">Unesite vas broj telefona</label>
+            <input type="tel" id="phone"></input>
+            <br></br>
+            <br></br>
+            <button>Sumbit</button>
+          </form>
         </div>
       </div>
     </>
