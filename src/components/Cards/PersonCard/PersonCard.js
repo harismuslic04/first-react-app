@@ -1,58 +1,25 @@
 import React from "react";
 import "./PersonCard.css";
-import { FaStar } from "react-icons/fa";
-import { FaStarHalf } from "react-icons/fa";
-export default function PersonCard(props) {
-  const oneStar = (
-    <span>
-      <FaStar></FaStar>
-    </span>
-  );
-  const halfStar = <span></span>;
-  const stars = (num) => {
-    const arr = [];
-    for (let i = 1; i <= num; i++) {
-      arr.push(oneStar);
-    }
-    return arr;
-  };
-  const slashIndex = props.rating.indexOf("/");
-  const rating = +props.rating.slice(0, slashIndex);
-  let reaction;
-  if (rating >= 5 && rating < 6) {
-    reaction = "Decent";
-  } else if (rating >= 6 && rating < 7) {
-    reaction = "";
-  } else if (rating >= 7 && rating < 8) {
-    reaction = "good";
-  } else if (rating >= 8 && rating < 9) {
-    reaction = "Very Good";
-  } else {
-    reaction = "Wonderful";
-  }
-  const showRecomendation = rating >= 8 ? true : false;
+import { FaGithub } from "react-icons/fa";
 
+export default function PersonCard(props) {
   return (
     <div className="card">
-      <div className="slika">
-        <img src={props.imageURL} className="img" />
+      <div className="firstPart">
+        <img src={props.imageURL} alt={"profile_img"} className="img" />
+        <h1>{props.fullname}</h1>
+        <h3>{props.location}</h3>
       </div>
-      <div className="ostalo">
-        <h1>{props.name}</h1>
-        <p>{stars(props.stars)}</p>
-        <p>{props.location}</p>
-        <p
-          style={{
-            background: rating < 7 ? "orange" : rating < 9 ? "red" : "green",
-          }}
+      <div className="secondPart">
+        <p>{props.description}</p>
+        <a
+          href={props.goToRepositories}
+          target="blank"
+          style={{ color: "darkblue" }}
+          className="gitHub"
         >
-          <strong>{props.rating}</strong> <span>{reaction}</span> (
-          {props.reviews} reviews)
-        </p>
-        {/* 1.nacin prikazivanja */}
-        {showRecomendation && <p>Recomendation</p>}
-        {/* 2.nacin prikazivanja */}
-        {/* {showRecomendation ? <p>Recomendation</p> : <></>} */}
+          <FaGithub style={{ width: "50px", height: "50px" }} />
+        </a>
       </div>
     </div>
   );

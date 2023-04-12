@@ -1,22 +1,52 @@
 .card {
+  width: 250px;
+  height: 420px;
   display: flex;
-  /* align-items: center; */
-  width: 380px;
-  height: 280px;
-  /* background-color: red; */
   flex-direction: column;
-  cursor: pointer;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 15px;
+  box-shadow: 2px 2px 6px rgba(25, 25, 25, 0.8),
+    -2px -2px 6px rgba(25, 25, 25, 0.8);
+  /* transition: transform 0.2s ease-in; */
 }
-.slika {
-  width: 100%;
-  height: 60%;
-  background-color: blue;
+
+/* .card:hover {
+    transform: scale(1.05);
+  } */
+
+.firstPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
 }
-.slika img {
-  height: 100%;
-  width: 100%;
+
+.secondPart {
+  margin-top: 25px;
+  border-top: 2px solid grey;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
 }
-.ostalo h1 {
-  margin-left: 5%;
-  font-size: 1.5rem;
+
+.secondPart p {
+  text-align: center;
+}
+
+.img {
+  margin-top: 25px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.gitHub {
+  position: absolute;
+  top: 130px;
 }

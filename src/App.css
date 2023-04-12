@@ -1,18 +1,13 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
-  padding: 0;
+.hotels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(40%, auto);
+  justify-items: center;
 }
-.header {
-  /* width: 100%; */
-  height: 15vh;
-  background-color: blue;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
+
 .formContainer {
+  width: 70%;
   margin: auto;
-  /* margin-top: 150px; */
-  width: 30%;
+  margin-top: 150px;
+  margin-bottom: 50px;
 }
