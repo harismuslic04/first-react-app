@@ -7,7 +7,7 @@ export default function PersonCard(props) {
     <div className="card">
       <div className="firstPart">
         <img src={props.imageURL} alt={"profile_img"} className="img" />
-        <h1>{props.fullname}</h1>
+        <h2>{props.fullName}</h2>
         <h3>{props.location}</h3>
       </div>
       <div className="secondPart">
