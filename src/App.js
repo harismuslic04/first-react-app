@@ -52,6 +52,7 @@ function App() {
   // const x = 10;
 
   const [name, setName] = useState("");
+  const []
   // console.log(name);
   return (
     //  React.createElement("p", {}, "Neki paragraf");
